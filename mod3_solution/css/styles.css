@@ -1,0 +1,110 @@
+body {
+  font-size: 16px;
+  background-color: #fff;
+  font-family: 'San Francisco', Helvetica, Arial, san-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #0B0B61;
+  border-radius: 0;
+  border: 0;
+}
+
+
+.navbar-brand {
+  padding-bottom: -40px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'San Francisco', Helvetica, Arial, san-serif;
+  color: #FF8000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #FFF;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #FF8000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #FF8000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -40px;
+}
+/* END HEADER */
+
+#main-content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#menu-categories-title {
+  color: #000000;
+  font-weight: bold;
+}
+
+#food-description {
+  background-color: #D8D8D8;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  
+}
+
+#food-description h3 {
+  color: #000000;
+  font-weight: bold;
+}
+
+#food-description p {
+  color: #000000;
+}
+
+
+
+/********** Extra small devices only **********/
+@media (min-width: @screen-xs-min) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 40px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: vw; /* 1vw = 1% of viewport width */
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+ 
+}
